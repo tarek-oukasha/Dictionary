@@ -57,3 +57,41 @@ personal_info3 = {
 personal_infos = [personal_info1,personal_info2,personal_info3]
 
 print(personal_infos[0])
+
+#print all the keys or values from personal_info1
+print(personal_info1.keys())
+print(personal_info1.values())
+
+#print the number of key value pair (item) in the dictionary
+print(len(personal_info1))
+
+#check the data type of the variable personal_info1
+print(type(personal_info1))
+
+#print the value of first name from the personal_info1
+print(personal_info1.get("first_name"))
+print(personal_info1['first_name'])
+
+print(personal_info1.get("last_name"))
+print(personal_info1.get("school"))
+print(personal_info1.get("date_of_birth"))
+print(personal_info1.get("email"))
+print(personal_info1.get("age"))
+print(personal_info1.get("address"))
+print(personal_info1.get("friends"))
+#try to print from a key that does not exist in the dictionary
+print(personal_info1.get("grades"))
+#print(personal_info1['grades'])
+
+
+print(personal_info1.get("friends")[2])
+
+friends = ["ram","mohammad","abdullah"]
+
+print(friends[2])
+
+#check if the key grades exists inside the personal_info1
+if "grade" in personal_info1:
+    print("it is there")
+else :
+    print("it is not there")
